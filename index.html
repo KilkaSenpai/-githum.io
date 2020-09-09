@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <header class="header">
+          <header class="header">
                 <div class="container">
                     <div class="header__inner">
                         <a class="header__logo" href="#">
@@ -25,20 +25,34 @@
                         <nav class="header__menu">
                             <ul class="menu">
                                 <li class="menu__list">
-                                    <a class="menu__link" href="#" onclick="slowScroll('.info')">Главная</a>
+                                    <a class="menu__link" href="#anchor-1">Главная</a>
                                 </li>
                                 <li class="menu__list">
-                                    <a class="menu__link" href="#" onclick="slowScroll('.course__title')">Как это
+                                    <a class="menu__link" href="#anchor-2">Как это
                                         работает?</a>
                                 </li>
                                 <li class="menu__list">
-                                    <a class="menu__link" href="#" onclick="slowScroll('.about')">Обо мне</a>
+                                    <a class="menu__link" href="#anchor-3">Обо мне</a>
                                 </li>
                                 <li class="menu__list">
-                                    <a class="menu__link" href="#" onclick="slowScroll('.program')">Программа курса</a>
+                                    <a class="menu__link" href="#anchor-4">Программа курса</a>
                                 </li>
                                 <li class="menu__list">
-                                    <a class="menu__link" href="#" onclick="slowScroll('.reviews')">Отзывы</a>
+                                    <a class="menu__link" href="#anchor-5">Отзывы</a>
+                                </li>
+                            </ul>
+                            <ul class="menu__icons">
+                                <li class="menu__icons-list">
+                                    <a class="menu__icont-link icon-youtube" href="#"></a>
+                                </li>
+                                <li class="menu__icons-list">
+                                    <a class="menu__icont-link icon-instagram" href="#"></a>
+                                </li>
+                                <li class="menu__icons-list">
+                                    <a class="menu__icont-link icon-vk" href="#"></a>
+                                </li>
+                                <li class="menu__icons-list">
+                                    <a class="menu__icont-link icon-email" href="#"></a>
                                 </li>
                             </ul>
                         </nav>
@@ -60,52 +74,11 @@
                     </div>
                 </div>
             </header>
-
-            <header class="mob-header">
-                <div class="container__fluid">
-                    <div class="mob-header__inner">
-                        <nav class="mob-header__menu">
-                            <ul class="mob-menu">
-                                <li class="mob-menu__list">
-                                    <a class="mob-menu__link" href="#" onclick="slowScroll('.info')">Главная</a>
-                                </li>
-                                <li class="mob-menu__list">
-                                    <a class="mob-menu__link" href="#" onclick="slowScroll('.course')">Как это
-                                        работает?</a>
-                                </li>
-                                <li class="mob-menu__list">
-                                    <a class="mob-menu__link" href="#" onclick="slowScroll('.about')">Обо мне</a>
-                                </li>
-                                <li class="mob-menu__list">
-                                    <a class="mob-menu__link" href="#" onclick="slowScroll('.program')">Программа
-                                        курса</a>
-                                </li>
-                                <li class="mob-menu__list">
-                                    <a class="mob-menu__link" href="#" onclick="slowScroll('.reviews')">Отзывы</a>
-                                </li>
-                            </ul>
-                            <ul class="mob-menu__icons">
-                                <li class="mob-menu__icons-list">
-                                    <a class="mob-menu__icont-link icon-youtube" href="#"></a>
-                                </li>
-                                <li class="mob-menu__icons-list">
-                                    <a class="mob-menu__icont-link icon-instagram" href="#"></a>
-                                </li>
-                                <li class="mob-menu__icons-list">
-                                    <a class="mob-menu__icont-link icon-vk" href="#"></a>
-                                </li>
-                                <li class="mob-menu__icons-list">
-                                    <a class="mob-menu__icont-link icon-email" href="#"></a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <section class="info">
+            <section class="info" id="anchor-1">
                 <div class="container">
                     <div class="info__inner">
                         <img class="info__img" src="images/info-img.jpg" alt="img">
+                        <img class="info__img-mob" src="images/info-img-mob.jpg" alt="img">
                         <span class="info__shadow"></span>
                         <ul class="info__list">
                             <li class="info__list-item">Формула денег</li>
@@ -124,7 +97,7 @@
                                     Предназначение»</span>
                             </p>
                             <div class="info__box">
-                                <a class="info__box-link" href="#">Участвовать</a>
+                                <a class="info__box-link red_btn" href="#">Участвовать <span></span></a>
                                 <p class="info__box-text">
                                     Курс включает ИНДИВИДУАЛЬНЫЙ разбор <span class="info__box-text-span">вашей</span>
                                     натальной карты
@@ -135,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="course">
+            <section class="course" id="anchor-2">
                 <div class="container">
                     <h2 class="course__title">
                         Как это работает?
@@ -154,7 +127,7 @@
                                 </li>
                                 <li class="course__text">Работаете на нелюбимой работе и не знаете в чем ваше
                                     предназначение;</li>
-                                <li class="course__text">Не понимаете как работает Энергия денег и не умеете ей
+                                <li class="course__text">Не понимаете как работает Энергия Денег и не умеете ей
                                     управлять;
                                 </li>
                                 <li class="course__text">Много работаете, но мало зарабатываете;</li>
@@ -167,7 +140,7 @@
                                 <li class="course__text">Желаете все изменить, но вы не знаете как;</li>
                                 <li class="course__text">Ощущаете финансовую зависимость и не знаете что с этим делать;
                                 </li>
-                                <li class="course__text">Не имеете накоплений и вы постоянно в напряжении из-за того,
+                                <li class="course__text">Не имеете накоплений и постоянно находитесь в напряжении из-за того,
                                     что
                                     денег «впритык»
                                 </li>
@@ -177,7 +150,7 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="anchor-3">
                 <div class="container">
                     <div class="about__inner">
                         <h3 class="about__title">Обо мне</h3>
@@ -209,7 +182,7 @@
                     </div>
                 </div>
             </section>
-            <section class="program">
+            <section class="program" id="anchor-4">
                 <div class="container">
                     <div class="program__inner">
                         <h3 class="program__title">Программа курса</h3>
@@ -247,8 +220,8 @@
                             <ul class="program__list">
                                 <li class="program__list-text-title program__list-text-title--3">МОДУЛЬ: ЭНЕРГИЯ ДЕНЕГ
                                 </li>
-                                <li class="program__list-text">1 урок - что такое Энергия денег</li>
-                                <li class="program__list-text">2 урок - законы Энергии денег и их практическое
+                                <li class="program__list-text">1 урок - что такое Энергия Денег</li>
+                                <li class="program__list-text">2 урок - законы Энергии Денег и их практическое
                                     применение</li>
                                 <li class="program__list-text">3 урок - деньги делаются из воздуха: почему?</li>
                                 <li class="program__list-text">4 урок - Вторая Формула Денег, находим Источник
@@ -295,11 +268,11 @@
                             </ul>
                             <ul class="program__list">
                                 <li class="program__list-text-title program__list-text-title--7">МОДУЛЬ:<br
-                                        class="program__list-br"> ИНДИВИДУАЛЬНЫЙ РАЗБОР натальных карт участников курса
+                                        class="program__list-br"> ИНДИВИДУАЛЬНЫЙ РАЗБОР <br> натальных карт участников курса
                                 </li>
                                 <li class="program__list-text">Активации денежного потенциала через Предназначение
                                     Определение сферы максимального денежного потенциала</li>
-                                <li class="program__list-text"><br class="program__list-br">Базовый Гороскоп «Деньги и
+                                <li class="program__list-text program__list-text--indent"><br>+Базовый Гороскоп «Деньги и
                                     Предназначение»
                                 </li>
                             </ul>
@@ -328,16 +301,16 @@
                                     <span class="icon-check_box"></span>Базовый гороскоп «Деньги и Предназначение» в
                                     формате текста;
                                 </p>
-                                <p class="price__item-text price__item-text--indent">
+                                <p class="price__item-text">
                                     <span class="icon-check_box"></span>Чек-листы и материалы уроков в виде PDF таблиц и
                                     файлов;
                                 </p>
                                 <p class="price__item-text price__item-text--indent">
-                                    <span class="icon-check_box"></span>«Чат поддержки и общения»
+                                    <span class="icon-check_box"></span>Чат поддержки и общения
                                 </p>
                             </div>
                             <p class="price__item-cost price__item-cost--color">3000 руб</p>
-                            <a class="price__item-link" href="#">Записаться</a>
+                            <a class="price__item-link" href="#">Участвовать</a>
                         </div>
                         <div class="price__item price__item--border">
                             <div class="price__item-title price__item-title--color">
@@ -345,60 +318,68 @@
                             </div>
                             <p class="price__item-text">
                                 <span class="icon-check_box"></span>27 теоритических уроков на тему Денег и
-                                Предназначения с практическими заданиями.
+                                Предназначения с практическими заданиями;
                             </p>
                             <p class="price__item-text">
                                 <span class="icon-check_box"></span>Индивидуальный разбор вашей натальной карты на тему
-                                активации сферы максимального денежного потенциала 🔆 через Предназначение, в режиме
-                                реального времени на онлайн вебинре с возможностью
-                                задать вопросы;
+                                активации сферы максимального денежного потенциала через Предназначение, "в режиме
+                                реального времени на онлайн вебинаре с возможностью
+                                задать вопросы";
                             </p>
                             <p class="price__item-text">
                                 <span class="icon-check_box"></span>Базовый гороскоп «Деньги и Предназначение» в формате
                                 текста;
                             </p>
-                            <p class="price__item-text price__item-text--indent">
+                            <p class="price__item-text">
                                 <span class="icon-check_box"></span>Чек-листы и материалы уроков в виде PDF таблиц и
                                 файлов;
                             </p>
-                            <p class="price__item-text price__item-text--indent">
-                                <span class="icon-check_box"></span>«Чат поддержки и общения»
+                            <p class="price__item-text">
+                                <span class="icon-check_box"></span>Чат поддержки и общения
                             </p>
                             <p class="price__item-text price__item-text--indent">
                                 <span class="icon-check_box"></span>«Обратная связь по домашним заданиям курса»
                             </p>
                             <p class="price__item-cost">7000 руб</p>
-                            <a class="price__item-link price__item-link--color" href="#">Записаться</a>
+                            <a class="price__item-link price__item-link--color red_btn" href="#">Участвовать<span></span></a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="reviews">
+            <section class="reviews" id="anchor-5">
                 <div class="container">
                     <h3 class="reviews__title">
                         Отзывы
                     </h3>
                     <div class="reviews__items">
                         <div>
-                            <iframe class="reviews__item" src="https://www.youtube.com/embed/V4dOr14qF5E"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <div>
+                                <iframe class="reviews__item" src="https://www.youtube.com/embed/V4dOr14qF5E"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div>
-                            <iframe class="reviews__item" src="https://www.youtube.com/embed/iz2_oEeUrq0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <div>
+                                <iframe class="reviews__item" src="https://www.youtube.com/embed/iz2_oEeUrq0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div>
-                            <iframe class="reviews__item" src="https://www.youtube.com/embed/zjnYiu7kqXs"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <div>
+                                <iframe class="reviews__item" src="https://www.youtube.com/embed/zjnYiu7kqXs"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div>
-                            <iframe class="reviews__item" src="https://www.youtube.com/embed/WzWsCbJCmtM"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <div>
+                                <iframe class="reviews__item" src="https://www.youtube.com/embed/WzWsCbJCmtM"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -411,21 +392,21 @@
                     предназначение
                 </a>
                 <nav class="footer__menu">
-                    <ul class="menu">
+                    <ul class="menu menu2">
                         <li class="menu__list menu__list--none">
-                            <a class="menu__link" href="#">Главная</a>
+                            <a class="menu__link" href="#anchor-1">Главная</a>
                         </li>
                         <li class="menu__list menu__list--1">
-                            <a class="menu__link" href="#">Как это работает?</a>
+                            <a class="menu__link" href="#anchor-2">Как это работает?</a>
                         </li>
                         <li class="menu__list menu__list--3">
-                            <a class="menu__link" href="#">Обо мне</a>
+                            <a class="menu__link" href="#anchor-3">Обо мне</a>
                         </li>
                         <li class="menu__list menu__list--2">
-                            <a class="menu__link" href="#">Программа курса</a>
+                            <a class="menu__link" href="#anchor-4">Программа курса</a>
                         </li>
                         <li class="menu__list menu__list--4">
-                            <a class="menu__link" href="#">Отзывы</a>
+                            <a class="menu__link" href="#anchor-5">Отзывы</a>
                         </li>
                     </ul>
                     <ul class="footer__icons">
@@ -445,9 +426,9 @@
                 </nav>
                 <div class="footer__copy">
                     <span class="footer__copy-item footer__copy-item--order3">Все права защищены. 2020</span>
-                    <a class="footer__copy-item footer__copy-item--hover footer__copy-item--order2" href="#">Политика
+                    <a class="footer__copy-item footer__copy-item--hover footer__copy-item--order2" href="politics.html">Политика
                         конфиденциальности</a>
-                    <a class="footer__copy-item footer__copy-item--hover footer__copy-item--order1" href="#">Договор
+                    <a class="footer__copy-item footer__copy-item--hover footer__copy-item--order1" download href="rules.docx">Договор
                         оферты</a>
                 </div>
             </div>
