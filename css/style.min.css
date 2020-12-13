@@ -36,36 +36,36 @@
   -moz-osx-font-smoothing: grayscale
 }
 
-.icon-chevron-right:before {
-  content: "\e904"
+.icon-paper-plane:before {
+  content: "\e900";
 }
 
-.icon-chevron-left:before {
-  content: "\e903"
+.icon-send:before {
+  content: "\e900";
 }
 
 .icon-check_box:before {
-  content: "\e902"
+  content: "\e901";
 }
 
-.icon-email:before {
-  content: "\e901"
+.icon-chevron-right:before {
+  content: "\e902";
 }
 
-.icon-vk:before {
-  content: "\e900"
-}
-
-.icon-play2:before {
-  content: "\ea15"
+.icon-chevron-left:before {
+  content: "\e903";
 }
 
 .icon-instagram:before {
-  content: "\ea92"
+  content: "\ea92";
+}
+
+.icon-whatsapp:before {
+  content: "\ea93";
 }
 
 .icon-youtube:before {
-  content: "\ea9d"
+  content: "\ea9d";
 }
 
 html {
@@ -87,7 +87,6 @@ html {
 
 body,
 html {
-  height: 100%;
   position: relative;
   overflow-x: hidden
 }
@@ -279,7 +278,7 @@ input:focus {
 .header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
 }
 
 .header .menu__list {
@@ -728,7 +727,11 @@ input:focus {
 }
 
 .program__list-text-title--5::before {
-  content: '5'
+  content: '5';
+  position: absolute;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 23px
 }
 
 .program__list-text-title--6::before {
@@ -900,8 +903,8 @@ input:focus {
   height: 1px;
   width: 75px;
   background-color: #e1001e;
-  top: -10px;
-  right: 15px
+  top: -8px;
+  right: 8px
 }
 
 .price__item-cost::after {
@@ -1009,7 +1012,7 @@ input:focus {
   -o-transition: .3s;
   transition: .3s;
   position: absolute;
-  content: "\e904";
+  content: "\e902";
   bottom: 7px;
   left: 3px;
   font-size: 25px;
@@ -1140,11 +1143,11 @@ input:focus {
   color: #ff69b4
 }
 
-.footer .icon-vk:hover {
-  color: #597da3
+.footer .icon-whatsapp:hover {
+  color: #25D366
 }
 
-.footer .icon-email:hover {
+.footer .icon-paper-plane:hover {
   color: #00bfff
 }
 
@@ -1243,7 +1246,7 @@ input:focus {
   .header .menu__icont-link  {
     margin-right: 22px;
   }
-  .header .icon-email {
+  .header .icon-paper-plane {
     margin-right: 0;
   }
 
@@ -1835,8 +1838,10 @@ input:focus {
   }
 
   .info__inner::before {
-    background-image: url(../images/info-min-girl.png);
-    top: 195px;
+    width: 100%;
+    min-height: 300px;
+    top: 145px;
+    background-size: contain;
   }
 
   .info__img-mob {
@@ -2142,4 +2147,70 @@ input:focus {
   .mob-header {
     display: none
   }
+}
+
+.price__item-cost {
+    font-size: 20px;
+}
+
+@media (max-width: 990px) {
+    .price__item-cost {
+    font-size: 18px;
+}
+.hide_menu {
+    display: none!important;
+}
+}
+
+.red_btn {
+    position: relative;
+        overflow: hidden;
+}
+
+.red_btn span {
+    height: 100%;
+    width: 100%;
+    transition: .6s;
+    position: absolute;
+    transform: translateX(-100%);
+    animation: moving 3.5s ease-in-out infinite;
+}
+
+.red_btn span:before {
+    content: '';
+    height: 200%;
+    width: 25px;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    bottom: 0;
+    background: rgba(255,255,255,0.95);
+    transform: skew(-30deg);
+}
+
+.forma_cas {
+    margin-top: 150px;
+}
+
+@media (max-width: 990px) {
+    .forma_cas {
+    margin-top: 110px;
+}
+    .header__menu {
+        display: block;
+        opacity: 0;
+        transition: .3s;
+    }
+    .active_menu {
+        opacity: 1;
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(500%);
+    }
 }
